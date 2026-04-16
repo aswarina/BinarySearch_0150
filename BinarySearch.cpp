@@ -102,13 +102,21 @@ void binarySearch()
         } while (low <= high); 
 
         if(low >high);
-        {
+        { 
+            cout << "\n[x] Elemen " << x << "tidak ditemukan dalam array.\n";
+        } 
             cout << "\nlngin mencari lagi? (y/n);";
             cin >> ulang;
 
-        }while (ulang == 'y' || ulang =='Y');
-    }
+    }while (ulang == 'y' || ulang =='Y');
+}
 
-    int main()
+int main()
+    {
+        input();
+        bubbleSortArray();
+        display();
+        binarySearch();
+    }
 
         
